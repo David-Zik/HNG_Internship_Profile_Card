@@ -14,9 +14,9 @@ const displayTimeDate = function () {
 // Update the time and date every 1000milliseconds (1000 === 1s)
 setInterval(displayTimeDate, 1000);
 
+// Add class to anchor element
 anchor.forEach(function (a) {
   if (a.querySelector("i")) {
-    console.log(a);
     a.classList.add("hover-effect");
   }
 });
