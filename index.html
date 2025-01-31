@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>HNG-12 | Profile Card</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="cover_bg">
+          <img src="./images/coverbg.jpg" alt="Cover" />
+        </div>
+        <div class="profile_img" data-testid="profilePicture">
+          <img src="./images/selfie.png" alt="profile_picture" />
+        </div>
+      </section>
+
+      <section class="intro">
+        <div class="full_name" data-testid="fullName">
+          <h2>David Ezeike</h2>
+        </div>
+        <div class="title" data-testid="jobTitle">
+          <p>Front-End Developer</p>
+        </div>
+        <div class="location" data-testid="currentLocation">
+          <p><i class="fi fi-rr-marker icon"></i> Anambra State, Nigeria.</p>
+        </div>
+        <div class="bio" data-testid="shortBio">
+          <p>
+            I'm a creative front-end developer, I enjoy using my skills to
+            contribute in solving real-world problems.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="emailAddress" data-testid="emailAddress">
+          <p>
+            <i class="fi fi-rr-envelope email_icon icon"></i
+            >davidezeike6@gmail.com
+          </p>
+        </div>
+        <div class="timeUTC" data-testid="currentTimeUTC"></div>
+        <div class="socialLinks" data-testid="socialLinks">
+          <a href="https://x.com/davofcrypto"
+            ><i class="fi fi-brands-twitter-alt icon"></i
+          ></a>
+          <a href="https://linkedin.com/in/david-ezeike"
+            ><i class="fi fi-brands-linkedin icon"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100009282315431"
+            ><i class="fi fi-brands-facebook icon"></i
+          ></a>
+          <a href="https://github.com/David-Zik"
+            ><i class="fi fi-brands-github icon"></i
+          ></a>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/* MOBILE-FIRST APPROACH */
+
+/* Used the universal property selector (*) to style the initial margin, padding and box-sizing*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a smooth scroll behavior to the page if necessary */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "montserrat", sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  background-color: #c4cbca;
+}
+
+/* Ensures img has full width of the container */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+  cursor: pointer;
+}
+
+/* Anchor tag styles */
+a:visited i {
+  color: #5d08be;
+}
+
+a:active i {
+  color: #74c7f3;
+}
+
+a:not([i]) {
+  padding: 0.3em;
+  font-size: 1.2em;
+}
+
+h2 {
+  font-family: roboto, serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #0077b6;
+}
+
+p {
+  color: #6c757d;
+}
+
+/* Styled the container of the respective elements */
+main {
+  width: 90%;
+  max-width: 380px;
+  background-color: #fff;
+  border-radius: 1.2em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for the first section tag */
+.hero {
+  width: 100%;
+  margin-bottom: 4.5em;
+  position: relative;
+}
+
+/* Styles for cover img container */
+.cover_bg {
+  height: 200px;
+}
+
+/* Styles for cover img */
+.cover_bg img {
+  height: 100%;
+  object-fit: cover; /* Ensures it fills the div*/
+  overflow: hidden;
+  border-radius: 1.2em, 0;
+  border-top-left-radius: 1.2em;
+  border-top-right-radius: 1.2em;
+}
+
+/* Styles for profile img container */
+.profile_img {
+  width: 40%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -3.8em;
+  left: 30%;
+}
+
+/* Styles for profile img */
+.profile_img img {
+  border: 0.3em solid #fff;
+  border-radius: 50%;
+}
+
+/* Styles for the second section tag  */
+.intro {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: gray;
+  background-color: #fff;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+/* Icon styles */
+.location {
+  margin-bottom: 1em;
+}
+
+.email_icon {
+  margin-right: 0.5em;
+}
+
+.icon {
+  vertical-align: sub;
+  color: #0077b6;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.1em;
+  margin-top: 1em;
+}
+
+.hover-effect:hover i {
+  color: #000;
+}
+
+/**********************************************/
+/* DESKTOP-VIEW */
+@media (min-width: 1024px) {
+  main {
+    width: 100%;
+    max-width: 571px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .cover_bg {
+    height: 200px;
+  }
+
+  .profile_img {
+    width: 25%;
+    position: absolute;
+    left: 1.8em;
+  }
+
+  .intro {
+    text-align: start;
+  }
+
+  footer {
+    align-items: start;
+  }
+}
