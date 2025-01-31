@@ -41,6 +41,6 @@ To make sure that all functionalities of the webpage work seamlessly, I carried-
 * Confirmed that the date was displayed in real-time.
 * Tested the responsiveness across different devices.
 
-## Contribution
+## Contributing
 I would appreaciate your honest feedback and contribution, it will help improve this project. If you find any issue don't hesitate to open an issue or a pull request.
 Thank you for your time, God bless you.
