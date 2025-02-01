@@ -22,7 +22,7 @@ body {
   font-family: "montserrat", sans-serif;
   line-height: 1.5;
   height: 100vh;
-  background-color: #c4cbca;
+  background-color: #afe8f7;
 }
 
 /* Ensures img has full width of the container */
@@ -67,8 +67,9 @@ main {
   width: 90%;
   max-width: 380px;
   background-color: #fff;
+  margin-top: -2em;
   border-radius: 1.2em;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Styles for the first section tag */
@@ -153,10 +154,11 @@ footer {
 
 /**********************************************/
 /* DESKTOP-VIEW */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   main {
     width: 100%;
     max-width: 571px;
+    margin-top: 0;
   }
 
   .hero {
